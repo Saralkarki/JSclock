@@ -8,7 +8,7 @@ function setDate(){
     const secondDegrees = ((seconds/60)* 360) + 90;
     const minuteDegrees = ((minute/60)* 360)+ 90;
     const hourDegrees = ((hour/12)* 360)+ 90;
-    const secondHand = document.querySelector("#second");
+    const secondHand = document.getElementById("second");
     const minuteHand = document.querySelector("#minute");
     const hourHand = document.querySelector("#hour");
     secondHand.style.transform = `rotate(${secondDegrees}deg)`;
